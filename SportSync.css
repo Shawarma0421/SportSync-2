@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% 
+    overflow-x: hidden; /* Prevents accidental side-scrolling */
+    background-color: #161618;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background: #161618;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    nav .logo img {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+        border-radius: 0;
+    }
+
+nav .logo h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 60px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 8px 6px;
+    transition: 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+    transform: translateY(-2px);
+}
+
+
+body {
+    background-color: #161618;
+}
+
+.intro {
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+    color: #000;
+}
+
+.intro h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.download {
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #0f1828;
+    color: white;
+}
+
+.features-container {
+    padding: 80px 20px;
+    background: #ffffff;
+    color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.showcase {
+    flex: 5;
+    padding: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.showcase-img {
+    flex: 3;
+}
+
+    .showcase-img img,
+    .feature-image img {
+        width: 250px !important;
+        height: auto !important;
+        display: block;
+    }
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+}
+
+.image-container {
+  display: flex; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; 
+}
+
+.image-container img {
+  width: 20%; 
+  height: auto;
+  object-fit: cover;
+}
+
+.showcase h2 {
+  font-size: 40px;
+}
+
+.showcase p {
+  font-size: 20px;
+  
+}
+
+/*about us page*/
+/* Fix for the dark and misplaced Mission section */
+.mission-box {
+    background-color: #ffffff; /* Bright white background */
+    color: #111111; /* Dark, readable text */
+    text-align: center; /* Centers both the title and paragraph */
+    padding: 60px 40px; /* Adds space inside the box */
+    max-width: 900px; /* Prevents the text from being too wide */
+    margin: 40px auto; /* Centers the entire box on the page */
+    border-radius: 12px; /* Modern rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Makes it stand out */
+}
+
+    .mission-box h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #111;
+    }
+
+    .mission-box p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+    image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+    }
+
+    .team-card{
+        text-align: center;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0.1);
+        max-width: 350px;
+    }
+
+    .team-card img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #161618;
+        margin-bottom: 20px;
+    }
+
+.team.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 10px;
+    color: #444;
+}
+
+.download {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0b111a;
+    color: white;
+}
+
+/*aligns buttons side-by-side*/
+download-links img{
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+donwload-links img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* HP stands for Home Page - these won't affect other pages */
+.hp-feature-section {
+    width: 100%;
+    padding: 120px 0; /* More padding makes it look like the reference image */
+    display: block;
+}
+
+    .hp-feature-section.light {
+        background-color: #ffffff;
+    }
+
+    .hp-feature-section.dark {
+        background-color: #f8f9fa;
+        border-top: 1px solid #eee;
+    }
+
+.hp-feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the whole group */
+    max-width: 1250px; /* Wider container to let text expand */
+    margin: 0 auto;
+    gap: 100px; /* Bigger gap for a cleaner look */
+    padding: 0 60px;
+}
+
+    .hp-feature-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+/* THIS SECTION EXPANDS YOUR TEXT */
+.hp-feature-text {
+    flex: 2; /* Gives text 66% of the width, image 33% */
+    text-align: left;
+}
+
+    .hp-feature-text h2 {
+        font-size: 50px; /* Large bold text like the example */
+        font-weight: 800;
+        margin-bottom: 25px;
+        color: #111;
+        line-height: 1.1;
+        font-family: Arial, sans-serif;
+    }
+
+    .hp-feature-text p {
+        font-size: 22px; /* Bigger paragraph text to fill the page */
+        line-height: 1.6;
+        color: #444;
+    }
+
+/* THIS KEEPS THE IMAGE PROPERLY SIZED */
+.hp-feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+    .hp-feature-image img {
+        width: 300px !important; /* Slightly bigger to match the bigger text */
+        height: auto !important;
+        border-radius: 35px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+/* Update this section in your SportSync.css */
+.features-container.alternate {
+    background-color: #ffffff; /* Changes background to white */
+    color: #161618; /* Changes general text to dark */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 80px 40px;
+    border-top: 1px solid #eeeeee; /* Optional: adds a subtle line to separate sections */
+}
+
+    /* Update the Heading to be dark */
+    .features-container.alternate .showcase h2 {
+        color: #161618 !cite: important;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    /* Update the Paragraph to be dark gray */
+    .features-container.alternate .showcase p {
+        color: #444444 !cite: important;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /*Styling feature*/
+    .app screen{
+        width: 100px;
+        max-width: 320px;
+        height: auto;
+        border-radius: 35px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        display: block;
+        margin: 0 auto;
+        border: 5px solid #161618;
+    }
+
+.features-container.alternate .showcase h2 {
+    font-family: "Arial Black", Gadget, sans-serif; /* Bold Sans-Serif heading */
+    font-size: 48px;
+    font-weight: 900;
+    color: #161618;
+    margin-bottom: 25px;
+}
+.features-container.alternate .showcase p {
+    font-family: "Times New Roman", Times, serif; /* Traditional Serif body text */
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.features-container.alternate.showcase h2{
+    max-width: 550px;
+    flex: 1;
+}
+
+.features-container.alternate.showcase h2 {
+    font-family: "Arial Black", Gadget, sans-serif; /* Bold Sans-Serif heading */
+    font-size: 45px;
+    font-weight: 900;
+    color: #161618;
+    margin-bottom: 20px;
+}
+
+.features-container.alternate .showcase p {
+    font-family: "Times New Roman", Times, serif; /* Traditional Serif body text */
+    font-size: 19px;
+    line-height: 1.5; /* Matches the vertical rhythm of section 1 */
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.app-screen {
+    max-width: 300px;
+    height: auto;
+    border-radius: 35px;
+    border: 8px solid #161618; /* Phone bezel effect */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* This class creates the white background and reverses the layout */
+.features-container.alternate {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse; /* Puts image on the left, text on the right */
+    align-items: center;
+    padding: 100px 50px;
+    gap: 40px;
+}
+
+/* Styling for the phone image to match 'Build Your Squad' */
+.app-screen {
+    max-width: 300px;
+    height: auto;
+    border-radius: 35px;
+    border: 8px solid #161618;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* Soft shadow for white background */
+    display: block;
+    margin: 0 auto;
+}
+/* --- OVERRIDE TO SYNC ALL FEATURE TEXT --- */
+
+/* This targets the headings in BOTH sections */
+.showcase h2 {
+    font-family: "Arial Black", Gadget, sans-serif !important;
+    font-size: 48px !important; /* Matches the large bold style in Secure */
+    font-weight: 900 !important;
+    color: #161618 !important;
+    margin-bottom: 25px !important;
+    line-height: 1.1 !important;
+}
+
+/* This targets the paragraphs in BOTH sections */
+.showcase p {
+    font-family: "Times New Roman", Times, serif !important; /* Matches the serif style in Secure */
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #333333 !important;
+    max-width: 580px !important; /* Keeps the text from spreading too wide */
+    margin-bottom: 20px !important;
+}
+
+/* --- FINAL IMAGE SYNC FIX --- */
+
+/* This will force the image in the Secure section to match Build Your Squad */
+.features-container.alternate .app-screen {
+    width: 300px !important; /* Sets the exact width */
+    height: auto !important; /* Keeps the phone aspect ratio correct */
+    border-radius: 35px !important; /* Adds the rounded corners */
+    border: 8px solid #161618 !important; /* Adds the dark phone bezel */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important; /* Adds the soft shadow */
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* --- FINAL FONT SYNC: FORCING ALL SECTIONS TO MATCH --- */
+
+/* 1. Force both Headings to be Arial Black 48px */
+.showcase h2,
+.features-container.alternate .showcase h2 {
+    font-family: "Arial Black", Gadget, sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    color: #161618 !important;
+    margin-bottom: 25px !important;
+}
+
+/* 2. Force both Paragraphs to be Times New Roman 20px */
+.showcase p,
+.features-container.alternate .showcase p {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #333333 !important;
+    max-width: 580px !important; /* This keeps the text from stretching too wide */
+    margin-bottom: 20px !important;
+}
+
+/* 3. Force both Images to the same size and phone frame */
+.app-screen {
+    width: 300px !important;
+    height: auto !important;
+    border-radius: 35px !important;
+    border: 8px solid #161618 !important; /* Adds the phone bezel */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+/* --- MOBILE NAVIGATION FIX --- */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column !important; /* Stack logo and links vertically */
+        align-items: center !important;
+        padding: 10px !important;
+    }
+
+    .nav-links {
+        gap: 20px !important; /* Space out Home and About Us */
+        margin-top: 10px !important;
+    }
+
+        .nav-links a {
+            font-size: 1rem !important; /* Slightly smaller text for mobile */
+        }
+}
+
+
